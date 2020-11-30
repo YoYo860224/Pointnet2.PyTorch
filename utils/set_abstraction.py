@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from utils.sampling import fps
-from utils.grouping import ball_query
-from utils.common import gather_points
+from ..utils.sampling import fps
+from ..utils.grouping import ball_query
+from ..utils.common import gather_points
 
 
 def sample_and_group(xyz, points, M, radius, K, use_xyz=True):

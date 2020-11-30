@@ -2,7 +2,7 @@ import numpy as np
 import os
 import torch
 from torch.utils.data import DataLoader, Dataset
-from data.provider import pc_normalize, rotate_point_cloud_with_normal, rotate_perturbation_point_cloud_with_normal, \
+from ..data.provider import pc_normalize, rotate_point_cloud_with_normal, rotate_perturbation_point_cloud_with_normal, \
     random_scale_point_cloud, shift_point_cloud, jitter_point_cloud, shuffle_points, random_point_dropout
 
 

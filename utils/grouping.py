@@ -1,5 +1,5 @@
 import torch
-from utils.common import gather_points, get_dists
+from ..utils.common import gather_points, get_dists
 
 
 def ball_query(xyz, new_xyz, radius, K):

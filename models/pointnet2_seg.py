@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from utils.set_abstraction import PointNet_SA_Module, PointNet_SA_Module_MSG
-from utils.feature_propagation import PointNet_FP_Module
+from ..utils.set_abstraction import PointNet_SA_Module, PointNet_SA_Module_MSG
+from ..utils.feature_propagation import PointNet_FP_Module
 
 
 class pointnet2_seg_ssg(nn.Module):

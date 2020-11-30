@@ -6,9 +6,9 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
-from models.pointnet2_seg import pointnet2_seg_ssg, seg_loss
-from data.ShapeNet import ShapeNet
-from utils.IoU import cal_accuracy_iou
+from .models.pointnet2_seg import pointnet2_seg_ssg, seg_loss
+from .data.ShapeNet import ShapeNet
+from .utils.IoU import cal_accuracy_iou
 
 
 def train_one_epoch(train_loader, seg_classes, model, loss_func, optimizer, device, pt):

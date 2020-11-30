@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from utils.set_abstraction import PointNet_SA_Module, PointNet_SA_Module_MSG
+from ..utils.set_abstraction import PointNet_SA_Module, PointNet_SA_Module_MSG
 
 
 class pointnet2_cls_ssg(nn.Module):

@@ -4,9 +4,9 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 from torch.utils.data import DataLoader
-from models.pointnet2_cls import pointnet2_cls_ssg, pointnet2_cls_msg
-from data.CustomDataset import CustomDataset
-from utils.common import setup_seed
+from .models.pointnet2_cls import pointnet2_cls_ssg, pointnet2_cls_msg
+from .data.CustomDataset import CustomDataset
+from .utils.common import setup_seed
 
 
 def evaluate_cls(model_id, data_root, checkpoint, nclasses, npoints=-1, dims=6):

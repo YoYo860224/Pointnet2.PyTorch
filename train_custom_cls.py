@@ -6,9 +6,9 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
-from models.pointnet2_cls import pointnet2_cls_ssg, pointnet2_cls_msg, cls_loss
-from data.CustomDataset import CustomDataset
-from utils.common import setup_seed
+from .models.pointnet2_cls import pointnet2_cls_ssg, pointnet2_cls_msg, cls_loss
+from .data.CustomDataset import CustomDataset
+from .utils.common import setup_seed
 
 
 def train_one_epoch(train_loader, model, loss_func, optimizer, device):

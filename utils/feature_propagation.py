@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from utils.common import gather_points, get_dists
+from ..utils.common import gather_points, get_dists
 
 
 def three_nn(xyz1, xyz2):

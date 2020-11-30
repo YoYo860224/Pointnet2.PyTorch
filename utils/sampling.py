@@ -1,5 +1,5 @@
 import torch
-from utils.common import get_dists
+from ..utils.common import get_dists
 
 
 def fps(xyz, M):
